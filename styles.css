@@ -81,9 +81,13 @@ h2 {
 }
 .ingredients ul {
   margin-left: 20px;
+  list-style-position: outside;
+
 }
 .ingredients ul li {
   margin-bottom: 20px;
+  text-indent: -10px;
+  padding-left: 30px;
 }
 
 hr {
@@ -97,9 +101,16 @@ hr {
   margin-bottom: 15px;
   color: hsl(14, 45%, 36%);
 }
+.instructions ol {
+  list-style-position: outside;
+  padding-left: 0;
+}
 .instructions ol li {
   margin-left: 20px;
+  padding-left: 30px;
   margin-bottom: 10px;
+  text-indent: -10px;
+  list-style-type: decimal;
 }
 .instructions ol li strong {
   font-weight: 500;
@@ -135,4 +146,33 @@ hr {
 .color {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  body {
+    background-color: transparent;
+  }
+  .container {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+
+  }
+
+  .introduction {
+    margin-right: 50px;
+  }
+  .introduction h1 {
+    font-size: 35px;
+  }
+  .introduction p {
+    font-size: 20px;
+  }
+  .logo img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
 }
