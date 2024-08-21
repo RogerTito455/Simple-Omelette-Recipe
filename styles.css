@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  min-height: 100vh;
   background-color: hsl(29, 53%, 90%);
   font-family: "Outfit", sans-serif;
 }
@@ -23,20 +23,19 @@ h2 {
   margin-bottom: 200px;
 }
 .logo {
-  margin-top: 50px;
+  margin: 50px auto 30px auto;
   text-align: center;
-  margin-bottom: 30px;
+
 }
 
 .logo img {
   width: 60vh;
-  text-align: center;
+  max-width: 100%;
   border-radius: 15px;
 }
 
 .introduction {
-  margin-left: 40px;
-  margin-right: 20px;
+  margin: 0 20px 20px 40px;
 }
 .introduction h1 {
   font-size: 2em;
@@ -48,13 +47,11 @@ h2 {
 }
 .subcontainer {
   display: block;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin: 0 20px 20px 40px;
   background-color: hsl(330, 100%, 98%);
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 .subcontainer h1 {
   margin-left: 20px;
@@ -72,8 +69,7 @@ h2 {
   color: black;
 }
 .ingredients {
-  margin-left: 45px;
-  margin-right: 20px;
+  margin: 0 20px 20px 45px;
 }
 .ingredients h2 {
   margin-bottom: 20px;
@@ -88,15 +84,11 @@ h2 {
 }
 
 hr {
-  margin-bottom: 30px;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 30px;
   border-color: #e8e8e8;
 }
 .instructions {
-  margin-left: 40px;
-  margin-right: 25px;
+  margin:  0 25px 20px 40px;
 }
 .instructions h2 {
   margin-bottom: 15px;
@@ -107,12 +99,11 @@ hr {
   margin-bottom: 10px;
 }
 .instructions ol li strong {
-  font-weight: 500px;
+  font-weight: 500;
   color: hsl(24, 5%, 18%);
 }
 .nutrition {
-  margin-left: 40px;
-  margin-right: 25px;
+  margin: 0 25px 20px 40px;
 }
 
 .nutrition h2 {
